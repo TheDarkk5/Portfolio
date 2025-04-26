@@ -207,3 +207,52 @@ p {
     margin: 0;
     color: #cccccc;
 }
+
+/* Grille de Projets */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Carte de Projet */
+.project-card {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card h2 {
+    margin-bottom: 15px;
+    color: #00bcd4;
+}
+
+.project-card p {
+    margin-bottom: 20px;
+    color: #cccccc;
+}
+
+/* Petit bouton sur les cartes */
+.btn-small {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #00bcd4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-small:hover {
+    background-color: #0097a7;
+}
